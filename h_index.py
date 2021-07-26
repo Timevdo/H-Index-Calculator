@@ -53,6 +53,7 @@ print("searching G-Scholar database...")
 try:
     query = scholarly.search_pubs(f"author:\"{author_name}\"")
 except:
+    print("Query Failed, Exit Code 1")
     done_loading = True
     sys.exit()
 author_cits = [q['num_citations'] for q in query]
