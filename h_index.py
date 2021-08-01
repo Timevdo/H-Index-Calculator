@@ -3,7 +3,7 @@ from scholarly import scholarly, ProxyGenerator
 from fp.fp import FreeProxy
 
 #proxy config
-do_proxy = True
+do_proxy = False
 max_proxy_tries = 3
 
 #input
@@ -76,4 +76,4 @@ done_loading = True
 print(f"H-index of {author_name} is {h_idx}")
 
 if h_idx == 0:
-    print("No h-index found. Please check if researcher name is correct, and if they actually did any research.")
+    print("No h-index found.")
